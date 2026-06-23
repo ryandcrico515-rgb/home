@@ -1,422 +1,349 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <script>
-location.href="https://www-kriptomats.com/"
-</script>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sabrao Despachante LTDA</title>
 
-<title>Impacto Visual Forte | Comunicação Visual</title>
-
+```
+<!-- Bootstrap -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
 
-<link rel="stylesheet"
-href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
 <style>
+    body{
+        font-family: Arial, sans-serif;
+    }
 
-body{
-    font-family: 'Segoe UI', sans-serif;
-}
+    .hero{
+        background: linear-gradient(135deg,#0d6efd,#003c8f);
+        color:white;
+        padding:100px 0;
+    }
 
-.hero{
-    background: linear-gradient(rgba(0,0,0,.75), rgba(0,0,0,.75)),
-    url('https://images.unsplash.com/photo-1504384308090-c894fdcc538d');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    color:#fff;
-    display:flex;
-    align-items:center;
-}
+    .hero h1{
+        font-size:3rem;
+        font-weight:bold;
+    }
 
-.hero h1{
-    font-size:4rem;
-    font-weight:bold;
-}
+    .section-title{
+        font-weight:bold;
+        color:#0d6efd;
+        margin-bottom:30px;
+    }
 
-.hero p{
-    font-size:1.3rem;
-}
+    .card-service{
+        transition:0.3s;
+    }
 
-.section-title{
-    font-weight:bold;
-    color:#0d6efd;
-    margin-bottom:20px;
-}
+    .card-service:hover{
+        transform:translateY(-8px);
+    }
 
-.icon-box{
-    padding:30px;
-    border-radius:15px;
-    transition:.3s;
-    background:#fff;
-    box-shadow:0 5px 15px rgba(0,0,0,.08);
-}
+    .info-box{
+        background:#f8f9fa;
+        border-radius:10px;
+        padding:25px;
+        height:100%;
+    }
 
-.icon-box:hover{
-    transform:translateY(-8px);
-}
+    footer{
+        background:#0d6efd;
+        color:white;
+        padding:20px;
+    }
 
-.icon-box i{
-    font-size:50px;
-    color:#0d6efd;
-    margin-bottom:20px;
-}
-
-.stats{
-    background:#0d6efd;
-    color:white;
-}
-
-.stats h2{
-    font-size:3rem;
-    font-weight:bold;
-}
-
-footer{
-    background:#111;
-    color:white;
-}
-
+    .icon{
+        font-size:45px;
+        color:#0d6efd;
+    }
 </style>
+```
 
 </head>
 <body>
 
 <!-- MENU -->
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
-<div class="container">
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary sticky-top">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            Sabrao Despachante
+        </a>
 
-<a class="navbar-brand fw-bold" href="#">
-Impacto Visual Forte
-</a>
+```
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+    </button>
 
-<button class="navbar-toggler"
-type="button"
-data-bs-toggle="collapse"
-data-bs-target="#menu">
-<span class="navbar-toggler-icon"></span>
-</button>
-
-<div class="collapse navbar-collapse" id="menu">
-<ul class="navbar-nav ms-auto">
-<li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
-<li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
-<li class="nav-item"><a class="nav-link" href="#empresa">Empresa</a></li>
-<li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
-</ul>
+    <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+            <li class="nav-item"><a href="#sobre" class="nav-link">Sobre</a></li>
+            <li class="nav-item"><a href="#servicos" class="nav-link">Serviços</a></li>
+            <li class="nav-item"><a href="#empresa" class="nav-link">Empresa</a></li>
+            <li class="nav-item"><a href="#contato" class="nav-link">Contato</a></li>
+        </ul>
+    </div>
 </div>
+```
 
-</div>
 </nav>
 
-<!-- HERO -->
+<!-- BANNER -->
 
-<section class="hero">
+<section class="hero text-center">
+    <div class="container">
+        <h1>Sabrao Despachante LTDA</h1>
+        <p class="lead mt-3">
+            Soluções rápidas, seguras e eficientes para documentação veicular e serviços de despachante.
+        </p>
 
-<div class="container text-center">
-
-<h1>IMPACTO VISUAL FORTE</h1>
-
-<p class="mt-4 mb-4">
-Transformando ideias em comunicação visual de alto impacto desde 1999.
-</p>
-
-<a href="#contato" class="btn btn-primary btn-lg">
-Solicite um Orçamento
-</a>
-
+```
+    <a href="#contato" class="btn btn-light btn-lg mt-3">
+        Solicitar Atendimento
+    </a>
 </div>
+```
 
 </section>
 
 <!-- SOBRE -->
 
 <section id="sobre" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Quem Somos</h2>
 
-<div class="container">
+```
+    <div class="row">
+        <div class="col-lg-6">
+            <p>
+                A <strong>Sabrao Despachante LTDA</strong> atua com profissionalismo,
+                agilidade e compromisso, auxiliando clientes em processos
+                relacionados à documentação veicular e serviços administrativos.
+            </p>
 
-<div class="row align-items-center">
+            <p>
+                Nosso objetivo é oferecer atendimento de qualidade,
+                reduzindo burocracias e proporcionando tranquilidade aos clientes.
+            </p>
+        </div>
 
-<div class="col-lg-6">
-
-<h2 class="section-title">
-Quem Somos
-</h2>
-
-<p>
-A Impacto Visual Forte é uma empresa especializada em soluções de
-comunicação visual para empresas, comércios, indústrias e eventos.
-</p>
-
-<p>
-Há mais de 26 anos atuando no mercado, oferecemos projetos que unem
-criatividade, qualidade e inovação para destacar marcas e fortalecer
-a presença visual dos nossos clientes.
-</p>
-
+        <div class="col-lg-6">
+            <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40"
+                 class="img-fluid rounded shadow"
+                 alt="Despachante">
+        </div>
+    </div>
 </div>
-
-<div class="col-lg-6">
-
-<img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3"
-class="img-fluid rounded shadow">
-
-</div>
-
-</div>
-
-</div>
+```
 
 </section>
 
 <!-- SERVIÇOS -->
 
 <section id="servicos" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center section-title">Nossos Serviços</h2>
 
-<div class="container">
+```
+    <div class="row g-4">
 
-<h2 class="section-title text-center">
-Nossos Serviços
-</h2>
+        <div class="col-md-4">
+            <div class="card card-service h-100 text-center p-4">
+                <i class="bi bi-car-front-fill icon"></i>
+                <h4 class="mt-3">Documentação Veicular</h4>
+                <p>Regularização e atualização de documentos.</p>
+            </div>
+        </div>
 
-<div class="row g-4">
+        <div class="col-md-4">
+            <div class="card card-service h-100 text-center p-4">
+                <i class="bi bi-arrow-left-right icon"></i>
+                <h4 class="mt-3">Transferência</h4>
+                <p>Transferência de propriedade com rapidez e segurança.</p>
+            </div>
+        </div>
 
-<div class="col-md-4">
-<div class="icon-box text-center">
-<i class="fa-solid fa-sign-hanging"></i>
-<h4>Fachadas</h4>
-<p>Projetos personalizados para destacar sua empresa.</p>
-</div>
-</div>
+        <div class="col-md-4">
+            <div class="card card-service h-100 text-center p-4">
+                <i class="bi bi-file-earmark-check-fill icon"></i>
+                <h4 class="mt-3">Regularizações</h4>
+                <p>Auxílio em pendências e processos administrativos.</p>
+            </div>
+        </div>
 
-<div class="col-md-4">
-<div class="icon-box text-center">
-<i class="fa-solid fa-print"></i>
-<h4>Impressão Digital</h4>
-<p>Materiais promocionais de alta qualidade.</p>
-</div>
-</div>
+        <div class="col-md-4">
+            <div class="card card-service h-100 text-center p-4">
+                <i class="bi bi-shield-check icon"></i>
+                <h4 class="mt-3">Consultorias</h4>
+                <p>Orientação especializada para diversos processos.</p>
+            </div>
+        </div>
 
-<div class="col-md-4">
-<div class="icon-box text-center">
-<i class="fa-solid fa-palette"></i>
-<h4>Identidade Visual</h4>
-<p>Fortaleça sua marca com comunicação profissional.</p>
-</div>
-</div>
+        <div class="col-md-4">
+            <div class="card card-service h-100 text-center p-4">
+                <i class="bi bi-clock-history icon"></i>
+                <h4 class="mt-3">Agilidade</h4>
+                <p>Atendimento eficiente e acompanhamento completo.</p>
+            </div>
+        </div>
 
-<div class="col-md-4">
-<div class="icon-box text-center">
-<i class="fa-solid fa-building"></i>
-<h4>Comunicação Empresarial</h4>
-<p>Soluções visuais para empresas e indústrias.</p>
-</div>
-</div>
+        <div class="col-md-4">
+            <div class="card card-service h-100 text-center p-4">
+                <i class="bi bi-people-fill icon"></i>
+                <h4 class="mt-3">Atendimento Personalizado</h4>
+                <p>Suporte próximo e transparente para cada cliente.</p>
+            </div>
+        </div>
 
-<div class="col-md-4">
-<div class="icon-box text-center">
-<i class="fa-solid fa-truck"></i>
-<h4>Adesivação</h4>
-<p>Veículos, vitrines e ambientes personalizados.</p>
+    </div>
 </div>
-</div>
-
-<div class="col-md-4">
-<div class="icon-box text-center">
-<i class="fa-solid fa-lightbulb"></i>
-<h4>Projetos Personalizados</h4>
-<p>Soluções criativas para qualquer necessidade.</p>
-</div>
-</div>
-
-</div>
-
-</div>
+```
 
 </section>
 
-<!-- NÚMEROS -->
-
-<section class="stats py-5">
-
-<div class="container">
-
-<div class="row text-center">
-
-<div class="col-md-4">
-<h2>26+</h2>
-<p>Anos de Experiência</p>
-</div>
-
-<div class="col-md-4">
-<h2>1999</h2>
-<p>Desde a Fundação</p>
-</div>
-
-<div class="col-md-4">
-<h2>100%</h2>
-<p>Compromisso com Qualidade</p>
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!-- EMPRESA -->
+<!-- DADOS DA EMPRESA -->
 
 <section id="empresa" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Informações da Empresa</h2>
 
-<div class="container">
+```
+    <div class="row g-4">
 
-<h2 class="section-title text-center">
-Informações da Empresa
-</h2>
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4><i class="bi bi-building"></i> Dados Cadastrais</h4>
 
-<div class="row">
+                <p><strong>Razão Social:</strong> Sabrao Despachante LTDA</p>
+                <p><strong>Nome Fantasia:</strong> Sabrao Despachante</p>
+                <p><strong>CNPJ:</strong> 53.262.326/0001-53</p>
+                <p><strong>Situação:</strong> Ativa</p>
+                <p><strong>Porte:</strong> Micro Empresa</p>
+                <p><strong>Natureza Jurídica:</strong> Sociedade Empresária Limitada</p>
+                <p><strong>Capital Social:</strong> R$ 20.000,00</p>
+            </div>
+        </div>
 
-<div class="col-lg-6">
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4><i class="bi bi-geo-alt-fill"></i> Endereço</h4>
 
-<ul class="list-group">
+                <p>
+                    Avenida Professor Francisco Valio, 495<br>
+                    Centro<br>
+                    Itapetininga - SP<br>
+                    CEP: 18200-320
+                </p>
 
-<li class="list-group-item">
-<strong>Razão Social:</strong>
-Impact Visual Impact Serviços de Comunicação Visual LTDA
-</li>
+                <p>
+                    Empresa constituída em 19/12/2023 e atuando com
+                    compromisso, transparência e excelência no atendimento.
+                </p>
+            </div>
+        </div>
 
-<li class="list-group-item">
-<strong>CNPJ:</strong>
-03.271.370/0001-51
-</li>
-
-<li class="list-group-item">
-<strong>Fundação:</strong>
-01/07/1999
-</li>
-
-<li class="list-group-item">
-<strong>Porte:</strong>
-Micro Empresa
-</li>
-
-<li class="list-group-item">
-<strong>Situação:</strong>
-Ativa
-</li>
-
-<li class="list-group-item">
-<strong>Capital Social:</strong>
-R$ 120.000,00
-</li>
-
-</ul>
-
+    </div>
 </div>
+```
 
-<div class="col-lg-6">
+</section>
 
-<div class="card shadow">
+<!-- DIFERENCIAIS -->
 
-<div class="card-body">
+<section class="py-5 bg-light">
+    <div class="container">
 
-<h4>Por que escolher a Impacto Visual Forte?</h4>
+```
+    <h2 class="text-center section-title">
+        Por Que Escolher a Sabrao Despachante?
+    </h2>
 
-<ul>
-<li>Mais de 26 anos de mercado</li>
-<li>Atendimento personalizado</li>
-<li>Projetos sob medida</li>
-<li>Qualidade e pontualidade</li>
-<li>Tecnologia e inovação</li>
-<li>Compromisso com resultados</li>
-</ul>
+    <div class="row text-center">
 
+        <div class="col-md-3">
+            <i class="bi bi-lightning-charge-fill icon"></i>
+            <h5>Rapidez</h5>
+        </div>
+
+        <div class="col-md-3">
+            <i class="bi bi-award-fill icon"></i>
+            <h5>Qualidade</h5>
+        </div>
+
+        <div class="col-md-3">
+            <i class="bi bi-lock-fill icon"></i>
+            <h5>Segurança</h5>
+        </div>
+
+        <div class="col-md-3">
+            <i class="bi bi-heart-fill icon"></i>
+            <h5>Confiança</h5>
+        </div>
+
+    </div>
 </div>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
+```
 
 </section>
 
 <!-- CONTATO -->
 
-<section id="contato" class="py-5 bg-light">
+<section id="contato" class="py-5">
+    <div class="container">
+        <h2 class="text-center section-title">Contato</h2>
 
-<div class="container">
+```
+    <div class="row">
 
-<h2 class="section-title text-center">
-Entre em Contato
-</h2>
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4>Fale Conosco</h4>
 
-<div class="row">
+                <p>
+                    Entre em contato para tirar dúvidas ou solicitar atendimento.
+                </p>
 
-<div class="col-md-6">
+                <p>
+                    <i class="bi bi-telephone-fill"></i>
+                    (15) 974XX-XXXX
+                </p>
 
-<h4>Endereço</h4>
+                <p>
+                    <i class="bi bi-envelope-fill"></i>
+                    atendimento@sabraodespachante.com.br
+                </p>
+            </div>
+        </div>
 
-<p>
-<i class="fa-solid fa-location-dot"></i>
-Rua Antonio Lando, 73<br>
-Bairro Estevam Carraro<br>
-Erechim - RS<br>
-CEP 99706-476
-</p>
+        <div class="col-md-6">
+            <div class="info-box">
+                <h4>Horário de Atendimento</h4>
 
+                <p>Segunda a Sexta</p>
+                <p>08:00 às 18:00</p>
+
+                <p>
+                    Atendimento especializado e suporte completo para seus processos.
+                </p>
+            </div>
+        </div>
+
+    </div>
 </div>
-
-<div class="col-md-6">
-
-<h4>Contato</h4>
-
-<p>
-<i class="fa-solid fa-phone"></i>
-(54) 991XX-XXXX
-</p>
-
-<p>
-<i class="fa-solid fa-envelope"></i>
-contato@impactovisualforte.com.br
-</p>
-
-<a href="#" class="btn btn-success">
-<i class="fab fa-whatsapp"></i>
-WhatsApp
-</a>
-
-</div>
-
-</div>
-
-</div>
+```
 
 </section>
 
-<!-- RODAPÉ -->
-
-<footer class="py-4">
-
-<div class="container text-center">
-
-<h5>Impacto Visual Forte</h5>
-
-<p>
-Transformando marcas através da comunicação visual.
-</p>
-
-<p class="mb-0">
-© 2025 Impacto Visual Forte - Todos os direitos reservados.
-</p>
-
-</div>
-
+<footer class="text-center">
+    <div class="container">
+        <p class="mb-0">
+            © 2026 Sabrao Despachante LTDA - Todos os direitos reservados.
+        </p>
+    </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
